@@ -1,12 +1,12 @@
 const express = require('express')
-const bodyParser = require('body-parser')
+/*const bodyParser = require('body-parser')*/
 const { WebhookClient } = require('dialogflow-fulfillment');
 
 const app = express()
 app.use(express.json())
 const port = process.env.PORT || 3000
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
     res.json("Estou funcionando!")
 })
 
