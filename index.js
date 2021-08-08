@@ -1,5 +1,4 @@
 const express = require('express')
-/*const bodyParser = require('body-parser')*/
 const { WebhookClient } = require('dialogflow-fulfillment');
 
 const app = express()
