@@ -19,31 +19,30 @@ app.listen(port, () => {
     console.log(`Abrindo na porta: ${port}`)
 })
 
-var intentName = request.body.queryResult.intent.displayName;
-if (intentName == EnviarEmail) {
-    var Email = request.body.queryResult.parameters['Email'];
-    var Mensagem = request.body.queryResult.parameters['Mensagem'];
+if (intentName == 'EnviarEmail') {
+    var nodemailer = require('nodemailer');
+    var Email = request.body.queryResult.paremeters['Email'];
+    var Mensagem = request.body.queryResult.paremeters['Mensagem'];
     var transporte = nodemailer.createTransport({
-        service: 'Outlook',
+        service: 'Outlook', //servidor a ser usado
         auth: {
-            user: process.env.user,
-            pass: process.env.pass
+            user: process.env.user, // dizer qual o usuário
+            pass: process.env.pass // senha da conta
         }
-    })
+    });
     var email = {
-        from: process.env.user,
-        to: Email,
-        subject: "Suporte de cliente",
-        html: Mensagem
+        from: process.env.user, // Quem enviou este e-mail
+        to: Email, // Quem receberá
+        subject: "Assunto", // Um assunto
+        html: Mensagem // O conteúdo do e-mail
     };
     transporte.sendMail(email, function (error, info) {
         if (error)
             console.log(error);
-        throw error;
-        console.log('Email enviado! Leia as informações adicionais' + info);
+        throw error; // algo de errado aconteceu.
+        console.log('Email enviado! Leia as informações adicionais: ' + info);
     });
 }
-
 
 const dialogflowFulfillment = (request, response) => {
     const agent = new WebhookClient({ request, response })
