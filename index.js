@@ -46,13 +46,11 @@ const dialogflowFulfillment = (request, response) => {
                     console.log(error);
                 throw error; // algo de errado aconteceu.
                 console.log('Email enviado! Leia as informações adicionais: ' + info);
-                agent.add('Email enviado! Leia as informações adicionais: ' + info);
             });
         }
     }
 
     let intentMap = new Map();
-    intentMap.set("Default Welcome Intent", saudacao)
     intentMap.set("EnviarEmail", saudacao)
     agent.handleRequest(intentMap)
 
