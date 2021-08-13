@@ -22,12 +22,12 @@ app.listen(port, () => {
 const dialogflowFulfillment = (request, response) => {
     const agent = new WebhookClient({ request, response })
 
-    function saudacao(agent) {
+    function sendEmail() {
         //agent.add("Olá, esta mensagem está vindo do server")
         if (intentName == 'EnviarEmail') {
             var nodemailer = require('nodemailer');
-            var Email = request.body.queryResult.paremeters['Email'];
-            var Mensagem = request.body.queryResult.paremeters['Mensagem'];
+            var Email = request.body.queryResult.parameters['Email'];
+            var Mensagem = request.body.queryResult.parameters['Mensagem'];
             var transporte = nodemailer.createTransport({
                 service: 'Outlook', //servidor a ser usado
                 auth: {
@@ -35,7 +35,7 @@ const dialogflowFulfillment = (request, response) => {
                     pass: process.env.pass // senha da conta
                 }
             });
-            var email = {
+            var mailOptions = {
                 from: process.env.user, // Quem enviou este e-mail
                 to: Email, // Quem receberá
                 subject: "Assunto", // Um assunto
@@ -50,8 +50,8 @@ const dialogflowFulfillment = (request, response) => {
         }
     }
 
-    let intentMap = new Map();
-    intentMap.set("EnviarEmail", saudacao)
-    agent.handleRequest(intentMap)
+    //let intentMap = new Map();
+    intentMap.set("EnviarEmail", email)
+    //agent.handleRequest(intentMap)
 
 }
