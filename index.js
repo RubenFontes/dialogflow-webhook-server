@@ -22,7 +22,7 @@ app.listen(port, () => {
 const dialogflowFulfillment = (request, response) => {
     const agent = new WebhookClient({ request, response })
 
-    function sendEmail() {
+    function emailFunc() {
         //agent.add("Olá, esta mensagem está vindo do server")
         if (intentName == 'EnviarEmail') {
             var nodemailer = require('nodemailer');
