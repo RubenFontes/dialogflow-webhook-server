@@ -23,7 +23,6 @@ var intentName = request.body.queryResult.intent.displayName;
 if (intentName == EnviarEmail) {
     var Email = request.body.queryResult.parameters['Email'];
     var Mensagem = request.body.queryResult.parameters['Mensagem'];
-    var nodemailer = request('nodemailer');
     var transporte = nodemailer.createTransport({
         service: 'Outlook',
         auth: {
