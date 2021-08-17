@@ -22,36 +22,33 @@ app.listen(port, () => {
 const dialogflowFulfillment = (request, response) => {
     const agent = new WebhookClient({ request, response })
 
-    function emailFunc() {
-        //agent.add("Olá, esta mensagem está vindo do server")
-        if (intentName == 'EnviarEmail') {
-            var nodemailer = require('nodemailer');
-            var Email = request.body.queryResult.parameters['Email'];
-            var Mensagem = request.body.queryResult.parameters['Mensagem'];
-            var transporte = nodemailer.createTransport({
-                service: 'Outlook', //servidor a ser usado
-                auth: {
-                    user: process.env.user, // dizer qual o usuário
-                    pass: process.env.pass // senha da conta
-                }
-            });
-            var mailOptions = {
-                from: process.env.user, // Quem enviou este e-mail
-                to: Email, // Quem receberá
-                subject: "Assunto", // Um assunto
-                html: Mensagem // O conteúdo do e-mail
-            };
-            transporte.sendMail(email, function (error, info) {
-                if (error)
-                    console.log(error);
+    function envio_email(agent){
+        var nodemailer = require('nodemailer');
+        var transporte = nodemailer.createTransport({
+            service: 'Outlook', //servidor a ser usado
+            auth: {
+                user: "dorinhateste123@hotmail.com", // dizer qual o usuário
+                pass: "Aqua1313" // senha da conta
+            }
+        });
+
+        var email = {
+            from:"dorinhateste123@hotmail.com", // Quem enviou este e-mail
+            to: request.body.queryResult.parameters['email'], // Quem receberá
+            subject: request.body.queryResult.parameters['assunto'], // Um assunto
+            html: request.body.queryResult.parameters['mensagem'] // O conteúdo do e-mail
+        };
+
+        transporte.sendMail(email, function(error, info){
+            if(error){
+                console.log (error);
                 throw error; // algo de errado aconteceu.
-                console.log('Email enviado! Leia as informações adicionais: ' + info);
-            });
-        }
+            }
+            agent.add('Email enviado! Leia as informações adicionais: '+ info);
+        });
+    
     }
-
-    //let intentMap = new Map();
-    intentMap.set("EnviarEmail", email)
-    //agent.handleRequest(intentMap)
-
+    let intentMap = new Map();
+    intentMap.set("envio_email", envio_email)
+    agent.handleRequest(intentMap)
 }
