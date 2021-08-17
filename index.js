@@ -23,6 +23,7 @@ const dialogflowFulfillment = (request, response) => {
     const agent = new WebhookClient({ request, response })
 
     function EnviarEmail(agent) {
+        agent.add("Esta mensagem está vindo do server")
         var nodemailer = require('nodemailer');
         var transporte = nodemailer.createTransport({
             service: 'Outlook', //servidor a ser usado
