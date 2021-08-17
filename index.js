@@ -51,5 +51,6 @@ const dialogflowFulfillment = (request, response) => {
     }
     let intentMap = new Map();
     intentMap.set("EnviarEmail", EnviarEmail)
+    intentMap.set("Default Welcome Intent", EnviarEmail)
     agent.handleRequest(intentMap)
 }
