@@ -1,56 +1,59 @@
-const express = require('express');
+const express = require('express')
+//const bodyParser = require('body-parser')
+const { request } = require('express')
 const { WebhookClient } = require('dialogflow-fulfillment');
+const sendmail = require('sendmail')();
 const nodemailer = require('nodemailer');
-const { request } = require('express');
 
 const app = express()
-app.use(express.json())
+//app.use(bodyParser.json())
 const port = process.env.PORT || 3000
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-app.get("/", (req, res) => {
-    res.json("Estou funcionando!")
-})
-
-app.post('/dialogflow-fulfillment', (request, response) => {
-    dialogflowFulfillment(request, response)
+app.post('/dialogflow-fullfillment', (request, response) => {
+    dialogflowFullfillment(request, response)
 })
 
 app.listen(port, () => {
-    console.log(`Abrindo na porta: ${port}`)
+    console.log(`Listening on port ${port}`)
 })
 
-const dialogflowFulfillment = (request, response) => {
+const dialogflowFullfillment = (request, response) => {
     const agent = new WebhookClient({ request, response })
-
-    function EnviarEmail(agent) {
-        agent.add("Esta mensagem está vindo do server")
+    function envio_email(agent) {
         var nodemailer = require('nodemailer');
-        var transporte = nodemailer.createTransport({
-            service: 'Outlook', //servidor a ser usado
-            auth: {
-                user: "dorinhateste123@hotmail.com", // dizer qual o usuário
-                pass: "Aqua1313" // senha da conta
-            }
+        var sendmail = require('sendmail');
+        var transporter = nodemailer.createTransport({
+            sendmail: true,
+            newline: 'unix',
+            path: '/usr/sbin/sendmail',
         });
 
         var email = {
-            from: "dorinhateste123@hotmail.com", // Quem enviou este e-mail
-            to: request.body.queryResult.parameters['Email'], // Quem receberá
-            subject: request.body.queryResult.parameters['Assunto'], // Um assunto
-            html: request.body.queryResult.parameters['Mensagem'] // O conteúdo do e-mail
+            from: request.body.queryResult.parameters['remetente'], // Quem enviou este e-mail
+            to: request.body.queryResult.parameters['email'], // Quem receberá
+            subject: request.body.queryResult.parameters['assunto'], // Um assunto
+            html: request.body.queryResult.parameters['mensagem'] // O conteúdo do e-mail
         };
-
-        transporte.sendMail(email, function (error, info) {
+        transporter.sendMail(email, function (error, info) {
+            //console.log(info.envelope);
+            //console.log(info.messageId);
             if (error) {
                 console.log(error);
                 throw error; // algo de errado aconteceu.
             }
             agent.add('Email enviado! Leia as informações adicionais: ' + info);
         });
-
     }
+
+    function URLTeste(agent) {
+        var pegarURL = document.URL
+        agent.add(pegarURL)
+    }
+
     let intentMap = new Map();
-    intentMap.set("EnviarEmail", EnviarEmail)
-    intentMap.set("Default Welcome Intent", EnviarEmail)
+    intentMap.set("envio_email", envio_email)
+    intentMap.set("URLTest", URLTeste)
     agent.handleRequest(intentMap)
 }
