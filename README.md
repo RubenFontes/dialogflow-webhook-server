@@ -8,8 +8,7 @@ Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está dis
 # Menu #
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Comandos](#comandos-v01)
-- [Changelog](#changelog)
+- [Comandos](#comandos)
 
 # Tecnologias utilizadas #
 - [JavaScript](https://www.javascript.com)
@@ -20,22 +19,22 @@ Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está dis
 - Heroku
 - Visual Studio Code
 
-# Comandos
+# Comandos #
 
 | Comando | Descrição | Comando | Descrição |
 | ------- | --------- | ------- | --------- |
-| `/start` | Inicia o bot | `/cadbrl` | Retorna valor da conversão do Dólar Canadense para Real Brasileiro |
-| `/ajuda` | Mostra a lista de comandos disponíveis | `/audbrl` | Retorna valor da conversão do Dólar Australiano para Real Brasileiro |
-| `/criador` | Lhe mostra um pouco sobre mim e o projeto | `/yenbrl` | Retorna valor da conversão do Yene Japonês para Real Brasileiro |
-| `/backup` | Retorna valor da conversão do Dólar para Real Brasileiro |
-| `/ticket` | Retorna o valor da conversão do Euro para Real Brasileiro |
-| `/senha` | Retorna o valor do Bitcoin |
-| `/notas` | Retorna o valor do Ethereum |
-| `/questões` | Retorna o valor do Ethereum |
-| `/arquivos` | Retorna o valor do Ethereum |
-| `/certificado` | Retorna o valor do Ethereum |
-| `/idade` | Retorna o valor do Ethereum |
-| `/casar` | Retorna o valor do Ethereum |
+| `/start` | Inicia o bot | 
+| `/ajuda` | Mostra a lista de comandos disponíveis |
+| `/criador` | Autores |
+| `/backup` | Realizar backup de turmas|
+| `/ticket` | Abrir chamado de suporte |
+| `/senha` | Redefinição e recuperação de senha |
+| `/notas` | Inserir notas no Moodle |
+| `/questões` | Inserir banco de questões no Moodle |
+| `/arquivos` | Inserir arquivo |
+| `/certificado` | Inserir certificados no Moodle |
+| `/idade` | Lúdico |
+| `/casar` | Lúdico |
 
 
 # Autor <br>
