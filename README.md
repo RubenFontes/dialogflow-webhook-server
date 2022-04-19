@@ -1,9 +1,13 @@
 <h1 align="center">
     <br>:robot:Dorinha
-    <br><a href="https://t.me/dorinhasead_bot" target="_blank"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
-</h1>
+    <br><br><a href="https://t.me/dorinhasead_bot" target="_blank"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+</h1><br>
 
-Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível e integrado aos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você colaborar como sugestão de melhorias ou apenas deixar seu Feedback.
+<div align="center">
+    <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0"></a>
+</div>
+
+<br>Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível e integrado aos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você colaborar como sugestão de melhorias ou apenas deixar seu Feedback.
 
 # Menu #
 
