@@ -7,7 +7,7 @@
     <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="500px"></a>
 </div>
 <hr size="1px">
-<br>Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você colaborar como sugestão de melhorias ou apenas deixar seu Feedback.
+<br>Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você colaborar com melhorias, realizar modificações, estudar ou apenas deixar seu feedback.
 
 # Menu #
 
@@ -18,7 +18,7 @@
 # Tecnologias utilizadas #
 - [JavaScript](https://www.javascript.com)
     - [NodeJS](https://nodejs.org)
-    - [Express](https://expressjs.com)
+    - [ExpressJS](https://expressjs.com)
     - APIS
         - [NodeMailer](https://nodemailer.com/about/)
 - DialogFlow
@@ -33,7 +33,7 @@
 | `/ajuda` | Mostra a lista de comandos disponíveis |
 | `/criador` | Autores |
 | `/backup` | Realizar backup de turmas|
-| `/ticket` | Abrir chamado de suporte |
+| `/ticket` | Abrir chamado |
 | `/senha` | Redefinição e recuperação de senha |
 | `/notas` | Inserir notas no Moodle |
 | `/questões` | Inserir banco de questões no Moodle |
