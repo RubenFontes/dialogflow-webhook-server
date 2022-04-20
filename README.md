@@ -7,7 +7,7 @@
     <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="500px"></a>
 </div>
 <hr size="1px">
-<br>Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você colaborar com melhorias, realizar modificações, estudar ou apenas deixar seu feedback.
+<br>Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você pod colaborar com melhorias, realizar modificações, estudar ou apenas deixar seu feedback.
 
 # Menu #
 
