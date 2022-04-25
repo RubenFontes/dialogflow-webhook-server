@@ -6,12 +6,11 @@
     <figure>
         <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="300px"></a>
         <img src="https://i.ibb.co/48HQHKJ/3-01.png" alt="1-01" border="0" width="300px"></a><br>
-        <figcaption>Art by me</figcaption>
+        <figcaption>Art by <a href="http://rubenfontes.github.io/">Ruben F.</a></figcaption>
     </figure>
 </div>
 
-<hr size="1px">
-<br>Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você pode colaborar com melhorias, realizar modificações, estudar ou apenas deixar seu feedback.
+<br><p text-alig="center">Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram. Projeto livre, de código aberto, o qual você pode colaborar com melhorias, realizar modificações, estudar ou apenas deixar seu feedback.</p>
 
 # Menu #
 
