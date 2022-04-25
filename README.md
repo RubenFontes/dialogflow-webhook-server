@@ -1,11 +1,12 @@
 <h1 align="center">
-    Chatbot Dorinha
+    <a href="https://t.me/dorinhasead_bot" style="color:red">Chatbot Dorinha</a>
 </h1><br>
 
 <div align="center">
     <figure>
-        <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="500px"></a><br>
-    <br><a href="https://t.me/Samiss_rs"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+        <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="300px"></a>
+        <img src="https://i.ibb.co/48HQHKJ/3-01.png" alt="1-01" border="0" width="300px"></a><br>
+        <figcaption>Art by me</figcaption>
     </figure>
 </div>
 
