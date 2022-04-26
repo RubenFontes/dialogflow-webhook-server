@@ -26,6 +26,11 @@ const dialogflowFullfillment =(request, response) => {
             sendmail: true,
             newline: 'unix',
             path: '/usr/sbin/sendmail',
+          /*service: 'Outlook', //servidor a ser usado
+            auth: {
+                user: "email@hotmail.com", // dizer qual o usuário
+                pass: "Password123" // senha da conta
+            }*/
         });
 
         var email = {
