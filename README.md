@@ -6,7 +6,7 @@
     <figure>
         <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="300px"></a>
         <img src="https://i.ibb.co/48HQHKJ/3-01.png" alt="1-01" border="0" width="300px"></a><br>
-        <figcaption>Art by <a href="http://rubenfontes.github.io/">Ruben F.</a></figcaption>
+        <figcaption>Art by <a href="http://rubenfontes.github.io/">me</a></figcaption>
     </figure>
 </div>
 
