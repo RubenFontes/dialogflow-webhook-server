@@ -1,34 +1,51 @@
-<h1 align="center">
-    <a href="https://t.me/dorinhasead_bot" style="color:red">Chatbot Dorinha</a>
-</h1><br>
 
-<div align="center">
-    <figure>
-        <img src="https://i.ibb.co/86Kg9HP/1-01.png" alt="1-01" border="0" width="300px"></a>
-        <img src="https://i.ibb.co/48HQHKJ/3-01.png" alt="1-01" border="0" width="300px"></a><br>
-        <figcaption>Art by <a href="http://rubenfontes.github.io/">me</a></figcaption>
-    </figure>
-</div>
+# Dialogflow webhook server 
 
-<br><p text-alig="center">Chatbot desenvolvido para suporte a cursos em EAD, na UFPB. Atualmente está disponível nos ambientes virtuais do Moodle e Telegram</p>
+Esse servidor web cria a conexão com o dialogflow e implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. Esse projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de chatbot de suporte ao EaD.
 
-# Menu #
+## Menu #
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Variáveis de ambiente](#variáveis-de-ambiente)
+- [Dependências](#dependências)
 - [Comandos](#comandos)
 - [Autores](#autores)
 
-# Tecnologias utilizadas #
-- [JavaScript](https://www.javascript.com)
+## Tecnologias utilizadas #
+- JavaScript
     - [NodeJS](https://nodejs.org)
     - [ExpressJS](https://expressjs.com)
-    - APIS
+    - Packages
         - [NodeMailer](https://nodemailer.com/about/)
+        - [Sendmail](https://www.npmjs.com/package/sendmail)
 - DialogFlow
+    - [dialogflow-fulfillment](https://www.npmjs.com/package/dialogflow-fulfillment)
 - Heroku
 - Visual Studio Code
 
-# Comandos #
+## Instalação #
+Após clonar o repositório, entre no diretório raíz da pasta (pelo terminal) e digite:
+
+```bash
+npm init
+```
+
+Esse comando irá baixar todos os módulos e pacotes que são dependências do projeto.
+
+## Variáveis de ambiente # 
+- PORT=NUMERO_DA_PORTA_DO_SERVIDOR
+
+## Dependências #
+- dialogflow-fulfillment
+- actions-on-google
+- express
+- nodemailer
+- sendmail
+- postfix 
+- body-parser
+
+## Comandos #
 
 | Comando | Descrição |
 | ------- | --------- |
@@ -46,7 +63,7 @@
 | `/casar` | Lúdico |
 
 
-# Autores #
+## Autores #
 
 <table>
   <tr>
