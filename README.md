@@ -1,7 +1,7 @@
 
 # Dialogflow webhook server 
 
-Esse servidor web cria a conexão com o dialogflow e implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. Esse projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de chatbot de suporte ao EaD.
+Esse servidor web cria a conexão com o dialogflow e implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
 
 ## Menu #
 
