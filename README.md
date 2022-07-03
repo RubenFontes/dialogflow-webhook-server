@@ -1,16 +1,18 @@
 
 # Dialogflow webhook server 
 
-Esse servidor web cria a conexão com o dialogflow e implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
+Servidor web, desenvolvido em Node.js e Express, que cria a conexão com o dialogflow e implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
 
 ## Menu #
 
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Instalação](#instalação)
 - [Variáveis de ambiente](#variáveis-de-ambiente)
 - [Dependências](#dependências)
 - [Comandos](#comandos)
 - [Autores](#autores)
+- [Contribuições](#contribuições)
+- [Licença](#licença)
 
 ## Tecnologias utilizadas #
 - JavaScript
@@ -94,3 +96,10 @@ Esse comando irá baixar todos os módulos e pacotes que são dependências do p
   </tr>
 </table>
 
+## Contribuições #
+Pull requests são bem-vindas. Para grandes mudanças, abra um issue primeiro para discutir o que você gostaria de mudar.
+
+Certifique-se de atualizar os testes conforme apropriado.
+
+## Licença #
+[GPL](https://choosealicense.com/licenses/gpl-3.0/)
