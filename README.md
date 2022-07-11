@@ -9,16 +9,15 @@ Servidor web, desenvolvido em Node.js e Express, que cria a conexão com o dialo
 - [Instalação](#instalação)
 - [Variáveis de ambiente](#variáveis-de-ambiente)
 - [Dependências](#dependências)
-- [Comandos](#comandos)
 - [Autores](#autores)
 - [Contribuições](#contribuições)
 - [Licença](#licença)
 
 ## Tecnologias utilizadas #
 - JavaScript
-    - [NodeJS](https://nodejs.org)
-    - [ExpressJS](https://expressjs.com)
+- [NodeJS](https://nodejs.org)
     - Packages
+        - [ExpressJS](https://expressjs.com)
         - [NodeMailer](https://nodemailer.com/about/)
         - [Sendmail](https://www.npmjs.com/package/sendmail)
 - DialogFlow
@@ -46,24 +45,6 @@ Esse comando irá baixar todos os módulos e pacotes que são dependências do p
 - sendmail
 - postfix 
 - body-parser
-
-## Comandos #
-
-| Comando | Descrição |
-| ------- | --------- |
-| `/start` | Inicia o bot | 
-| `/ajuda` | Mostra a lista de comandos disponíveis |
-| `/criador` | Autores |
-| `/backup` | Realizar backup de turmas|
-| `/ticket` | Abrir chamado |
-| `/senha` | Redefinição e recuperação de senha |
-| `/notas` | Inserir notas no Moodle |
-| `/questões` | Inserir banco de questões no Moodle |
-| `/arquivos` | Inserir arquivos no Moodle |
-| `/certificado` | Inserir certificados no Moodle |
-| `/idade` | Lúdico |
-| `/casar` | Lúdico |
-
 
 ## Autores #
 
