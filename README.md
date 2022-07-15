@@ -26,10 +26,10 @@ Servidor web, desenvolvido em Node.js e Express, que cria a conexão com o dialo
 - Visual Studio Code
 
 ## Instalação #
-Após clonar o repositório, entre no diretório raíz da pasta (pelo terminal) e digite:
+Após clonar o repositório, entre na raíz do projeto (pelo terminal) e digite:
 
 ```bash
-npm init
+npm install
 ```
 
 Esse comando irá baixar todos os módulos e pacotes que são dependências do projeto.
