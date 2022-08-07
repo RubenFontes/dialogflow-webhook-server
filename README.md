@@ -39,11 +39,11 @@ Esse comando irá baixar todos os módulos e pacotes que são dependências do p
 
 ## Dependências #
 - dialogflow-fulfillment
-- actions-on-google
+- actions-on-google <opcional>
 - express
 - nodemailer
 - sendmail
-- postfix 
+- postfix <opcional>
 - body-parser
 
 ## Autores #
