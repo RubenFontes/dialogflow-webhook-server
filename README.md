@@ -1,7 +1,7 @@
 
-# Dialogflow webhook server 
+# About
 
-Servidor web, desenvolvido em Node.js e Express, que cria a conexão com o dialogflow e implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
+Servidor web, desenvolvido em Express.js, que implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
 
 ## Menu #
 
