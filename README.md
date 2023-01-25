@@ -1,31 +1,18 @@
 
 # About
 
-Servidor web, desenvolvido em Nodejs e Express.js, que implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
+Servidor HTTP, desenvolvido em Node.js e Express, que implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
 
-## Menu #
+## Important links
 
-- [Tecnologias utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Variáveis de ambiente](#variáveis-de-ambiente)
-- [Dependências](#dependências)
-- [Autores](#autores)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
+- [Instalação](#install)
+- [Variáveis de ambiente](#environment-variables)
+- [Dependências](#dependencies)
+- [Authors](#authors)
+- [Contribuições](#contributions)
+- [Licença](#license)
 
-## Tecnologias utilizadas #
-- JavaScript
-- [NodeJS](https://nodejs.org)
-    - Packages
-        - [ExpressJS](https://expressjs.com)
-        - [NodeMailer](https://nodemailer.com/about/)
-        - [Sendmail](https://www.npmjs.com/package/sendmail)
-- DialogFlow
-    - [dialogflow-fulfillment](https://www.npmjs.com/package/dialogflow-fulfillment)
-- Heroku
-- Visual Studio Code
-
-## Instalação #
+## Install #
 Após clonar o repositório, entre na raíz do projeto (pelo terminal) e digite:
 
 ```bash
@@ -34,19 +21,19 @@ npm install
 
 Esse comando irá baixar todos os módulos e pacotes que são dependências do projeto.
 
-## Variáveis de ambiente # 
+## Environment Variables # 
 - PORT=NUMERO_DA_PORTA_DO_SERVIDOR
 
-## Dependências #
+## Dependencies #
 - dialogflow-fulfillment
 - actions-on-google <opcional>
 - express
 - nodemailer
 - sendmail
 - postfix <opcional>
-- body-parser
+- ~body-parser~
 
-## Autores #
+## Authors #
 
 <table>
   <tr>
@@ -63,13 +50,13 @@ Esse comando irá baixar todos os módulos e pacotes que são dependências do p
         </sub>
       </a>
     <td align="center">
-      <a href="https://paulohsms.com">
+      <a href="https://github.com/interfaceslivres">
         <sub>
           <b>Paulo Henrique</b>
         </sub>
       </a>
     <td align="center">
-      <a href="https://t.me/Samiss_rs">
+      <a href="https://github.com/Samis6">
         <sub>
           <b>Samisses Carvalho</b>
         </sub>
@@ -77,10 +64,10 @@ Esse comando irá baixar todos os módulos e pacotes que são dependências do p
   </tr>
 </table>
 
-## Contribuições #
+## Contributions #
 Pull requests são bem-vindas. Para grandes mudanças, abra um issue primeiro para discutir o que você gostaria de mudar.
 
 Certifique-se de atualizar os testes conforme apropriado.
 
-## Licença #
+## License #
 [GPL](https://choosealicense.com/licenses/gpl-3.0/)
