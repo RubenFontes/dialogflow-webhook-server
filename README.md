@@ -1,7 +1,7 @@
 
 # About
 
-Servidor HTTP, desenvolvido em Node.js e Express, que implementa o envio de e-mails através do módulo Nodemailer para o agente <a href="https://t.me/dorinhasead_bot">Dorinha</a>. O projeto corresponde a uma iniciativa da SEAD (UFPB) para a criação de um chatbot de suporte ao EaD.
+Este é um servidor HTTP em Node.js e Express que utiliza o módulo Nodemailer para enviar e-mails para o agente Dorinha. Parte de um projeto da SEAD (UFPB) para suporte ao Ensino a Distância (EaD), o servidor recebe solicitações do Dialogflow via webhook no endpoint '/dialogflow-fullfillment' e as encaminha para o envio de e-mails de suporte.
 
 ## Important links
 
